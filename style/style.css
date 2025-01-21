@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Quicksand", sans-serif;
+}
+
+button {
+    display: flex;
+width: 197px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #FFF;
+font-family: Quicksand;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; 
+cursor: pointer;
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover {
+    transform: scale(1.1); /* Slightly increase size */
+}
+
+.header-button{
+   
+background: #FEA301;
+border: 1px solid #FEA301;
+border-radius: 12px;
+}
+.hero-button {
+    background: #111;
+    border: 1px solid #111;
+    border-radius: 12px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 140px;
+  padding: 20px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .title {
+  display: flex;
+  justify-content: flex-start;
+  gap: 11px;
+  align-items: center;
+}
+
+header nav .title span {
+  color: #111;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+header nav .link {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+  }
+
+  header nav .link a {
+    text-decoration: none;
+    position: relative;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; 
+transition: transform 0.3s ease, 0.3s ease;
+  }
+
+
+a:hover {
+    transform: scale(1.2);
+}
+
+.a1 {
+    color: #FEA301;
+}
+
+
+.a2 {
+    color: #01ACFD;
+}
+
+
+.a3 {
+    color: #05D4DF;
+}
+
+
+.a4 {
+    color: #5D58EF;
+}
+
+.mobile-header {
+    display: none; /* Default: hidden */
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px;
+ 
+    
+    border: 0.5px solid var(--Orange, #FEA301);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.mobile-header .logo img {
+    height: 46px;
+    width: auto;
+    margin-left: 16px;
+}
+
+/* Menu icon (hamburger) */
+.mobile-header .menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    /* padding: 10px 20px; */
+    margin-right: 16px;
+}
+
+.mobile-header .menu-icon .line {
+    width: 25px;
+    height: 3px;
+    background-color: #111;
+    border-radius: 2px;
+}
+
+/* Show header for mobile */
+@media (max-width: 576px) {
+    header nav{
+        display: none;
+    }
+    .mobile-header {
+        display: flex;
+    }
+}
