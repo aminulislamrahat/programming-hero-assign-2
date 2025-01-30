@@ -496,40 +496,38 @@ footer {
 }
 
 .about-school {
-    color: #FFF;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .footer-link .link {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .footer-link .link a {
-    text-decoration: none;
+  text-decoration: none;
   position: relative;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  color: #FFF;
+  color: #fff;
   transition: transform 0.3s ease, 0.3s ease;
 }
 
 .footer-link .social img {
-   
   position: relative;
   transition: transform 0.3s ease, 0.3s ease;
   cursor: pointer;
 }
 .footer-link .social img:hover {
-    transform: scale(1.2);
-  }
-
+  transform: scale(1.2);
+}
 
 /* Show header for mobile */
 @media (max-width: 576px) {
@@ -638,52 +636,39 @@ line-height: normal;
   }
 
   .footer-row {
-   
     flex-direction: column;
     margin: 0px 20px;
     /* padding-right: 60px; */
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    gap: 40px
+    gap: 40px;
   }
 
- 
-  
   .footer-logo {
     gap: 26px;
   }
-  
 
-  
   .footer-logo .title span {
- 
-  
     font-size: 1.8rem;
   }
-  
+
   .footer-logo p {
-  
-  
     font-size: 1rem;
   }
-  
+
   .footer-link {
-    
     gap: 24px;
   }
-  
+
   .about-school {
-      
-  font-size: 1.2rem;
+    font-size: 1.2rem;
   }
   .footer-link .link {
-      
-      gap: 16px;
+    gap: 16px;
   }
-  
+
   .footer-link .link a {
-      
     font-size: 1rem;
   }
 
@@ -691,6 +676,48 @@ line-height: normal;
     font-size: 1rem;
     padding: 6px 24px;
   }
-  
-  
+}
+
+.image-container-2-in-1 {
+  height: 520px;
+  width: 362px;
+  margin: 120px auto;
+  border: 6px solid black;
+  border-radius: 30px;
+  position: relative;
+}
+
+.image-1 {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 50px;
+  width: 362px;
+  height: 520px;
+  overflow: hidden;
+  border: 0px solid none;
+  border-radius: 30px;
+  transition: transform 0.3s ease, 0.3s ease;
+}
+
+.image-2 {
+  position: relative;
+  margin-top: 300px;
+  margin-left: -100px;
+  width: 258px;
+  height: 290px;
+  overflow: hidden;
+  border: 0px solid none;
+  border-radius: 30px;
+  transition: transform 0.3s ease, 0.3s ease;
+}
+
+.image-1:hover {
+  transform: scale(1.05);
+  z-index: 100;
+  border: 1px solid #fff;
+}
+
+.image-2:hover {
+  transform: scale(1.05);
+  border: 1px solid #fff;
 }
